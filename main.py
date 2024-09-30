@@ -35,7 +35,7 @@ temp = f"{temp:.2f}"
 humi = data_weather["main"]["humidity"]
 press = data_weather["main"]["pressure"]
 
-print(day, temp, humi, press)
+state = data_weather["name"]
 
 app = Flask(__name__)
 
