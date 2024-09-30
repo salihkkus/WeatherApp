@@ -2,8 +2,11 @@ from flask import Flask, render_template
 import requests
 import json
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 
-API_KEY = "99cfa13b9efdaad58ab80098082961a5"
+load_dotenv()  # .env dosyasını yükler
+API_KEY = os.getenv("API_KEY")
 city_name = "Istanbul" # input("Şehir ismi nedir? ")
 
 today = datetime.now()
@@ -38,7 +41,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template("index.html")
+    return render_template("index.html", temp=temp)
 
 if __name__ == "__main__":
     app.run(debug=True)
