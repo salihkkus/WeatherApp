@@ -31,22 +31,56 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            filter: blur(9px); 
-            z-index: -1; 
+            filter: blur(10px);
+            z-index: -1;
         }
 
         h1 {
             color: white;
-            font-size: 3em;
-            position: absolute; 
-            top: 10px;
-            left: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            z-index: 1; 
+            font-size: 45px;
+            position: absolute;
+            top: 3px;
+            left: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            z-index: 1;
+        }
+
+        .search-container {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%); 
+            z-index: 1;
+        }
+
+        .search-container input[type="text"] {
+            padding: 15px;
+            font-size: 20px;
+            border: none;
+            border-radius: 35px;
+            width: 400px;
+        }
+
+        .search-container input[type="submit"] {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius:30px;
+            margin-left: 15px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Weather App</h1>
+
+    <div class="search-container">
+        <form action="#">
+            <input type="text" placeholder="Search..." name="search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
 </body>
 </html>
