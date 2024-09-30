@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>WeatherApp</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <h1>Weather App</h1>
+    <h1>WeatherApp</h1>
     <div class="search-container">
         <form id="weatherForm">
             <input type="text" id="cityInput" placeholder="Search City..." name="city">
@@ -16,14 +16,21 @@
     </div>
     
     <div class="row text-center mt-5">
-        <div class="col-12">
-            <p class="fs-3">Temperature: {{temp}} <br></br><span id="temperature"></span></p>
-            <p class="fs-3">City, State: {{city}}, {{state}} <br></br><span id="cityName"></span></p>
-            <p class="fs-3">Day: {{day}} <br></br><span id="day"></span></p>
-            <p class="fs-3">Weather: {{weather}} <br></br><span id="weather"></span></p>
-            <p class="fs-3">Humidity: {{humi}} <br></br><span id="humidity"></span></p>
-            <p class="fs-3">Pressure: {{press}} <br></br><span id="pressure"></span></p>
+        <div class="fs-3-container">
+            <div class="fs-3-row">
+                <p class="fs-3">Temperature: 25°C</p>
+                <p class="fs-3">City Name: Istanbul</p>
+            </div>
+            <div class="fs-3-row">
+                <p class="fs-3">Day: Monday</p>
+                <p class="fs-3">Weather: Sunny</p>
+            </div>
+            <div class="fs-3-row">
+                <p class="fs-3">Humidity: 60%</p>
+                <p class="fs-3">Pressure: 1015 hPa</p>
+            </div>
         </div>
+        
     </div>
 
 </body>
