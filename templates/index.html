@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
     <h1>Weather App</h1>
@@ -17,12 +17,12 @@
     
     <div class="row text-center mt-5">
         <div class="col-12">
-            <p class="fs-3">Temperature: 16C <br></br><span id="temperature"></span></p>
-            <p class="fs-3">City Name: Yalova <br></br><span id="cityName"></span></p>
-            <p class="fs-3">Day: 26.09.2024 <br></br><span id="day"></span></p>
-            <p class="fs-3">Weather: Cloudy <br></br><span id="weather"></span></p>
-            <p class="fs-3">Humidity: %65 <br></br><span id="humidity"></span></p>
-            <p class="fs-3">Pressure: 100 <br></br><span id="pressure"></span></p>
+            <p class="fs-3">Temperature: {{temp}} <br></br><span id="temperature"></span></p>
+            <p class="fs-3">City, State: {{city}}, {{state}} <br></br><span id="cityName"></span></p>
+            <p class="fs-3">Day: {{day}} <br></br><span id="day"></span></p>
+            <p class="fs-3">Weather: {{weather}} <br></br><span id="weather"></span></p>
+            <p class="fs-3">Humidity: {{humi}} <br></br><span id="humidity"></span></p>
+            <p class="fs-3">Pressure: {{press}} <br></br><span id="pressure"></span></p>
         </div>
     </div>
 

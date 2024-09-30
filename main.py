@@ -27,7 +27,7 @@ r = requests.get(WEATHER_URL)
 
 data_weather = r.json()
 
-hava_durumu = data_weather["weather"][0]["main"]
+weather = data_weather["weather"][0]["main"]
 
 temp = data_weather["main"]["temp"] - 273.15
 temp = f"{temp:.2f}"
@@ -41,7 +41,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template("index.html", temp=temp)
+    return render_template("index.html", humi=humi, press=press, temp=temp, city=city_name, state=state, weather=weather, day=day)
 
 if __name__ == "__main__":
     app.run(debug=True)
